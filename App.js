@@ -1,10 +1,11 @@
 import React from 'react';
+//브릿지역할 자바스크립트와 안드로이드, ios를 연결
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.text}>Hello world</Text>
     </View>
   );
 }
@@ -12,8 +13,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'red',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
+  text: {
+    color:'yellow'
+  }
 });
